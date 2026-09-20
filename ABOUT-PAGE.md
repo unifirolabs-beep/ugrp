@@ -16,7 +16,7 @@ Visit http://localhost:3000/about. To check production output, run `npm run lint
 - `src/app/about/page.jsx`: route and search metadata.
 - `src/app/components/about/AboutPage.jsx`: section ordering.
 - Every section has its own component. Paragraphs, images, experience cards, case studies, ecosystem cards, track-record cards, and future slides also have dedicated reusable components.
-- `about.css`: responsive page styles. `globals.css`: shared local fonts and mobile layout adjustments to the existing navbar/footer.
+- Styling uses Tailwind CSS utility classes in the JSX components, including responsive layouts, hover/focus states, and reduced-motion variants. `globals.css` contains only the Tailwind import and `@theme inline` font configuration; there are no handwritten CSS selectors or media queries. `next/font/local` loads the supplied fonts in the root layout.
 - `Reveal.jsx`: Framer Motion entrance animations. `StoryTimeline.jsx`: keyboard-accessible milestone buttons and animated timeline. Both respect the device's reduced-motion preference. Content remains readable before JavaScript loads.
 - `public/images/about`: permanent copies of the supplied Figma assets.
 
