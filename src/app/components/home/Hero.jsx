@@ -1,24 +1,6 @@
 import Image from "next/image";
 
-/**
- * Hero — reproduces the 727 x 320 reference design.
- *
- * How it works
- * - On md+ the "stage" keeps the reference aspect ratio (727:320). Every position
- *   below is a percentage of that stage, and every font size / spacing is in `cqw`
- *   (1cqw = 1% of the stage width). So the composition scales as one piece and
- *   matches the reference at any width, up to the max-w cap.
- * - The avatars live INSIDE the map box and are positioned as % of the map, so they
- *   stay locked to the map. The man's avatar sits exactly on the orange pin that is
- *   baked into hero.png (the pin is hidden behind it; only its glow peeks out below).
- * - Below md the layout stacks: map on top, then text.
- *
- * Numbers were measured from the reference:  px / 727 (x)  and  px / 320 (y).
- *
- * Needs: public/images/hero/hero.png (1706x922), and 1.png / 2.png / 3.png avatars.
- */
 
-// Avatar centres as % of the MAP box (not of the section).
 const AVATARS = [
   {
     src: "/images/hero/3.png",
