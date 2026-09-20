@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <header className="h-[123px] w-full bg-[#f6f4f0]">
+    <header className="site-header h-[123px] w-full bg-[#f6f4f0]">
       <nav className="relative mx-auto flex h-full w-full max-w-[1040px] items-center justify-between">
 
         {/* Left navigation */}
         <div className="flex items-center gap-[48px]">
           <a
-            href="#"
+            href="/about"
             className="whitespace-nowrap font-liberation text-[15px] font-normal leading-none text-[#202020] transition-opacity duration-200 hover:opacity-65"
           >
             About Us

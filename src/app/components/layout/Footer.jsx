@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
     return (
-        <footer className="w-full">
+        <footer className="site-footer w-full">
             {/* Main footer */}
             <div className="min-h-[288px] bg-[#16181a] text-white">
                 <div className="mx-auto flex min-h-[288px] w-full max-w-[1040px]">
@@ -33,7 +33,7 @@ export default function Footer() {
 
                         <div className="mt-[20px] flex flex-col gap-[11px]">
                             <a
-                                href="#"
+                                href="/about"
                                 className="font-liberation text-[13px] text-[#d7d7d7] transition-opacity hover:opacity-65"
                             >
                                 About Us
