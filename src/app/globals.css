@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* ==========================================
+   FONT DEFINITIONS
+   ========================================== */
+
+/* Liberation Sans / Libertinus Sans - Regular */
 @font-face {
   font-family: "Liberation Sans";
   src: url("/fonts/LiberationSans-Regular.ttf") format("truetype");
@@ -8,6 +13,7 @@
   font-display: swap;
 }
 
+/* Liberation Sans / Libertinus Sans - Bold */
 @font-face {
   font-family: "Liberation Sans";
   src: url("/fonts/LiberationSans-Bold.ttf") format("truetype");
@@ -16,10 +22,36 @@
   font-display: swap;
 }
 
+/* Fallback alias so font-['Libertinus_Sans'] matches the file directly */
+@font-face {
+  font-family: "Libertinus Sans";
+  src: url("/fonts/LiberationSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libertinus Sans";
+  src: url("/fonts/LiberationSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* DejaVu Sans Mono - Bold */
 @font-face {
   font-family: "DejaVu Sans Mono";
   src: url("/fonts/DejaVuSansMono-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+}
+
+/* ==========================================
+   UTILITY HELPER CLASSES
+   Matches your font-mono-dejavu references
+   ========================================== */
+.font-mono-dejavu {
+  font-family: "DejaVu Sans Mono", monospace;
 }
