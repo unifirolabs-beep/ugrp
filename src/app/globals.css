@@ -55,3 +55,29 @@
 .font-mono-dejavu {
   font-family: "DejaVu Sans Mono", monospace;
 }
+@keyframes avatarPulse {
+  0%,
+  20%,
+  100% {
+    transform: scale(1);
+  }
+
+  10% {
+    transform: scale(1.12);
+  }
+}
+
+.avatar-1 {
+  animation: avatarPulse 6s ease-in-out infinite;
+}
+
+.avatar-2 {
+  animation: avatarPulse 6s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.avatar-3 {
+  animation: avatarPulse 6s ease-in-out infinite;
+  animation-delay: 4s;
+}
+/* font-liberation */
