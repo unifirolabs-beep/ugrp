@@ -1,0 +1,62 @@
+.homePage {
+  font-family: "Liberation Sans", sans-serif;
+}
+
+.homePage,
+.homePage * {
+  font-family: inherit;
+}
+
+/* Scoped classes for Home page */
+.homePage :global(.font-liberation) {
+  font-family: "Liberation Sans", sans-serif !important;
+}
+
+.homePage :global(.font-mono-dejavu) {
+  font-family: "DejaVu Sans Mono", monospace !important;
+}
+
+/* Figma Typography definitions strictly scoped to Home page */
+.homePage :global(.type-large-heading) {
+  font-family: "Liberation Sans", sans-serif !important;
+  font-size: 34px !important;
+  line-height: 40px !important;
+  font-weight: 700 !important;
+}
+
+.homePage :global(.type-medium-heading) {
+  font-family: "Liberation Sans", sans-serif !important;
+  font-size: 24px !important;
+  line-height: 30px !important;
+  font-weight: 700 !important;
+}
+
+.homePage :global(.type-small-heading) {
+  font-family: "Liberation Sans", sans-serif !important;
+  font-size: 16px !important;
+  line-height: 22px !important;
+  font-weight: 700 !important;
+}
+
+.homePage :global(.type-body) {
+  font-family: "Liberation Sans", sans-serif !important;
+  font-size: 13px !important;
+  line-height: 21px !important;
+  font-weight: 400 !important;
+}
+
+.homePage :global(.type-small-text) {
+  font-family: "Liberation Sans", sans-serif !important;
+  font-size: 10px !important;
+  line-height: 15px !important;
+  font-weight: 400 !important;
+}
+
+.homePage :global(.type-label) {
+  font-family: "DejaVu Sans Mono", monospace !important;
+  font-size: 10px !important;
+  line-height: 14px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em;
+}
