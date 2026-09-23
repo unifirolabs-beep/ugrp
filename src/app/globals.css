@@ -4,7 +4,7 @@
    FONT DEFINITIONS
    ========================================== */
 
-/* Liberation Sans / Libertinus Sans - Regular */
+/* Liberation Sans - Regular (400) */
 @font-face {
   font-family: "Liberation Sans";
   src: url("/fonts/LiberationSans-Regular.ttf") format("truetype");
@@ -13,7 +13,7 @@
   font-display: swap;
 }
 
-/* Liberation Sans / Libertinus Sans - Bold */
+/* Liberation Sans - Bold (700) */
 @font-face {
   font-family: "Liberation Sans";
   src: url("/fonts/LiberationSans-Bold.ttf") format("truetype");
@@ -39,7 +39,7 @@
   font-display: swap;
 }
 
-/* DejaVu Sans Mono - Bold */
+/* DejaVu Sans Mono - Bold (700) */
 @font-face {
   font-family: "DejaVu Sans Mono";
   src: url("/fonts/DejaVuSansMono-Bold.ttf") format("truetype");
@@ -55,6 +55,10 @@
 .font-mono-dejavu {
   font-family: "DejaVu Sans Mono", monospace;
 }
+
+/* ==========================================
+   AVATAR PULSE ANIMATION
+   ========================================== */
 @keyframes avatarPulse {
   0%,
   20%,
@@ -80,4 +84,3 @@
   animation: avatarPulse 6s ease-in-out infinite;
   animation-delay: 4s;
 }
-/* font-liberation */

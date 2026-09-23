@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -24,6 +25,7 @@ export default function Navbar() {
 
         {/* Center logo */}
         <div className="absolute left-1/2 top-1/2 max-[901px]:top-[45px] flex -translate-x-1/2 -translate-y-1/2 items-center justify-center">
+        <Link href="/">
           <Image
             src="/images/navbar/logo.png"
             alt="The U Group"
@@ -32,6 +34,7 @@ export default function Navbar() {
             height={60}
             priority
           />
+          </Link>
         </div>
 
         {/* Right navigation */}
