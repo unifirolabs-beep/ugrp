@@ -38,11 +38,11 @@ export default function WhyUs() {
       <div className="mx-auto max-w-[1400px]">
         {/* Heading */}
         <div className="mb-10 text-center md:mb-[3vw]">
-          <h2 className="font-liberation text-[34px] font-bold leading-[40px] text-[#17191d]">
+          <h2 className="font-liberation text-4xl font-bold leading-[40px] text-[#17191d]">
             Why The U Group
           </h2>
 
-          <p className="font-liberation mx-auto mt-3 max-w-[500px] text-[13px] font-normal leading-[21px] text-[#25272a]">
+          <p className="font-liberation mx-auto mt-3 max-w-[500px] text-lg font-normal leading-[21px] text-[#25272a]">
             Two Decades of Experience. One Commitment
             <br />
             to Execution.
@@ -54,26 +54,14 @@ export default function WhyUs() {
           {cards.map((card, index) => (
             <div
               key={card.title}
-              className={`flex min-h-[145px] flex-col justify-between rounded-[8px] px-5 py-5 md:min-h-[9.8vw] md:px-[1.1vw] md:py-[1.15vw] ${
-                index === 0
-                  ? "bg-[#d2a548] text-white md:col-span-2"
-                  : index === 1
-                    ? "bg-[#9d9997] text-white md:col-span-2"
-                    : index === 2
-                      ? "bg-[#9d9997] text-white md:col-span-2"
-                      : index === 3
-                        ? "bg-[#9d9997] text-white md:col-span-2"
-                        : index === 4
-                          ? "bg-[#9d9997] text-white md:col-span-2"
-                          : "bg-[#9d9997] text-white md:col-span-2"
-              }`}
+              className={`flex min-h-[145px] flex-col md:col-span-2 bg-[#9A9390] text-white hover:bg-[#CEA44D] justify-between rounded-[8px] px-5 py-5 md:min-h-[9.8vw] md:px-[1.1vw] md:py-[1.15vw] transition duration-300 ease-in-out`}
             >
               <div>
-                <h3 className="font-liberation whitespace-pre-line text-[16px] font-bold leading-[22px]">
+                <h3 className="font-liberation whitespace-pre-line text-lg font-bold leading-[22px]">
                   {card.title}
                 </h3>
 
-                <p className="font-liberation mt-4 text-[10px] font-normal leading-[15px]">
+                <p className="font-liberation mt-4 text-md font-normal leading-[15px]">
                   {card.description}
                 </p>
               </div>

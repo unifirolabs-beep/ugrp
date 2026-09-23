@@ -49,11 +49,11 @@ export default function Mantra() {
             HEADING
         ========================== */}
         <div className="text-center">
-          <h2 className="font-liberation text-[34px] font-bold leading-[40px] text-[#c49227]">
+          <h2 className="font-liberation text-4xl font-bold leading-none text-[#CEA44D]">
             The 1 + 1 = 11 Mantra
           </h2>
 
-          <p className="font-liberation mt-2 text-[24px] font-bold leading-[30px] text-[#17191d]">
+          <p className="font-liberation mt-2 text-2xl font-bold leading-none text-[#17191d]">
             More Than the Sum of Its Parts.
           </p>
         </div>
@@ -76,11 +76,11 @@ export default function Mantra() {
                 : "scale-100 opacity-[0.035]"
               }`}
           >
-            <h3 className="font-liberation text-[16px] font-bold leading-[22px] text-[#17191d]">
+            <h3 className="font-liberation text-md font-bold leading-[22px] text-[#17191d]">
               Capitalization
             </h3>
 
-            <p className="font-liberation mt-1 text-[13px] font-normal leading-[21px] text-[#17191d]">
+            <p className="font-liberation mt-1 text-sm font-normal leading-[21px] text-[#17191d]">
               Strategic capital that fuels growth and enables execution.
             </p>
           </div>
@@ -108,7 +108,7 @@ export default function Mantra() {
               Sales Expansion
             </h3>
 
-            <p className="font-liberation mt-1 text-[13px] font-normal leading-[21px] text-[#17191d]">
+            <p className="font-liberation mt-1 text-sm font-normal leading-[21px] text-[#17191d]">
               Strategic market development that opens new opportunities and
               accelerates revenue.
             </p>
@@ -137,7 +137,7 @@ export default function Mantra() {
               Business Infrastructure
             </h3>
 
-            <p className="font-liberation mt-1 text-[13px] font-normal leading-[21px] text-[#17191d]">
+            <p className="font-liberation mt-1 text-sm font-normal leading-[21px] text-[#17191d]">
               The systems, people, and processes required to build a scalable
               business.
             </p>
@@ -166,7 +166,7 @@ export default function Mantra() {
               Growth Strategy
             </h3>
 
-            <p className="font-liberation mt-1 text-[13px] font-normal leading-[21px] text-[#17191d]">
+            <p className="font-liberation mt-1 text-sm font-normal leading-[21px] text-[#17191d]">
               Focused strategies that turn potential into sustainable,
               long-term value.
             </p>
@@ -243,7 +243,7 @@ export default function Mantra() {
             <path
               d="M400 100 A180 180 0 0 1 580 280"
               fill="none"
-              stroke="#c49227"
+              stroke="#CEA44D"
               strokeWidth="9"
             />
 
@@ -385,7 +385,7 @@ export default function Mantra() {
             BOTTOM STATEMENT
         ========================== */}
         <p
-          className="font-liberation mx-auto mt-4 max-w-[1000px] text-center text-[13px] font-normal leading-[21px] text-[#25272a]"
+          className="font-liberation mx-auto mt-4 max-w-[1000px] text-center text-md font-normal leading-[21px] text-[#25272a]"
           style={{ fontFamily: '"Liberation Sans", sans-serif' }}
         >
           We bring together{" "}

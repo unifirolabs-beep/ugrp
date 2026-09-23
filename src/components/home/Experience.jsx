@@ -40,11 +40,11 @@ export default function Experience() {
       <div className="mx-auto max-w-[1200px]">
         {/* Heading */}
         <div className="text-center">
-          <h2 className="font-liberation text-[24px] font-bold leading-[30px] text-[#17191d]">
+          <h2 className="font-liberation text-4xl font-bold leading-[30px] text-[#17191d]">
             Experience That Creates Value
           </h2>
 
-          <p className="font-liberation mx-auto mt-3 max-w-[650px] text-[13px] font-normal leading-[21px] text-[#25272a]">
+          <p className="font-liberation mx-auto mt-3 max-w-[650px] text-lg font-normal leading-[21px] text-[#25272a]">
             From complex transactions to venture building, our track record is
             defined by
             <br className="hidden md:block" />
@@ -87,17 +87,11 @@ function StatCard({ stat }) {
 
   return (
     <div
-      className={`relative flex min-h-[145px] flex-col justify-center rounded-[7px] px-5 py-5 md:min-h-0 md:px-[1vw] md:py-[1vw] ${stat.featured
-        ? "bg-[#d2a548] text-white"
-        : "bg-[#9d9997] text-white"
-        }`}
+      className={`relative flex min-h-[145px] flex-col justify-center bg-[#9d9997] text-white hover:bg-[#CEA44D] transition-colors duration-300 ease-in-out rounded-[7px] px-5 py-5 md:min-h-0 md:px-[1vw] md:py-[1vw]`}
     >
       {/* Icon */}
       <div
-        className={`absolute right-3 top-3 flex h-7 w-7 items-center justify-center rounded-[5px] border md:right-[0.65vw] md:top-[0.65vw] md:h-[2vw] md:w-[2vw] ${stat.featured
-          ? "border-white/70 bg-white/90 text-[#c49227]"
-          : "border-white/60 bg-white/80 text-[#8e8987]"
-          }`}
+        className={`absolute right-3 top-3 flex h-7 w-7 items-center justify-center rounded-[5px] transition-colors duration-300 ease-in-out md:right-[0.65vw] md:top-[0.65vw] md:h-[2vw] md:w-[2vw]`}
       >
         <Icon
           size={15}
@@ -108,11 +102,11 @@ function StatCard({ stat }) {
 
       {/* Content */}
       <div>
-        <h3 className="font-liberation text-[16px] font-bold leading-[22px]">
+        <h3 className="font-liberation text-lg text-white font-bold leading-[22px]">
           {stat.title}
         </h3>
 
-        <p className="font-liberation mt-2 text-[10px] font-normal leading-[15px]">
+        <p className="font-liberation mt-2 text-md text-white font-normal leading-[15px]">
           {stat.subtitle}
           <br />
           {stat.description}

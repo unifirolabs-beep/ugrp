@@ -29,11 +29,11 @@ export default function Ventures() {
       <div className="mx-auto max-w-[1400px]">
         {/* Heading */}
         <div className="text-center">
-          <h2 className="font-liberation text-[34px] font-bold leading-[40px] text-[#17191d]">
+          <h2 className="font-liberation text-4xl font-bold leading-[40px] text-[#17191d]">
             Our Ventures
           </h2>
 
-          <p className="font-liberation mx-auto mt-4 text-[24px] font-bold leading-[30px] text-[#25272a]">
+          <p className="font-liberation mx-auto mt-4 text-lg font-medium leading-[30px] text-[#16181A]">
             Ideas Become Companies. Companies Become
             <br />
             Possibilities.
@@ -41,9 +41,9 @@ export default function Ventures() {
         </div>
 
         {/* Avatars + Statement */}
-        <div className="mx-auto mt-12 flex max-w-[1100px] items-center justify-center gap-10 md:mt-[4vw] md:gap-[5vw]">
+        <div className="mx-auto mt-12 max-w-[1100px] grid grid-cols-2 items-start md:mt-[4vw] md:gap-[5vw]">
           {/* Avatars */}
-          <div className="flex shrink-0 items-center">
+          <div className="flex justify-center items-center">
             {AVATARS.map((avatar, index) => (
               <div
                 key={avatar}
@@ -63,13 +63,12 @@ export default function Ventures() {
           </div>
 
           {/* Statement */}
-          <p className="font-liberation max-w-[650px] text-[24px] font-bold leading-[30px] text-[#17191d]">
+          <p className="font-liberation max-w-[650px] text-lg leading-[30px] text-[#17191d]">
             The U Group&apos;s ventures span multiple industries, united by
             one principle:
             <br />
-            <span>
+            <span className="font-bold">
               challenge conventional thinking and
-              <br className="hidden md:block" />
               build what comes next.
             </span>
           </p>

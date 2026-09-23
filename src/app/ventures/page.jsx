@@ -1,4 +1,4 @@
-import Hero from "../components/ventures/Hero";
+import Hero from "@/components/ventures/Hero";
 
 export const metadata = {
   title: "Ventures | The U Group",

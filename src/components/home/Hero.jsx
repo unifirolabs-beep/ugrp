@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 
 const AVATARS = [
   {
@@ -59,7 +59,7 @@ export default function Hero() {
 
         {/* ── Right block: heading, paragraph, links ───────────────── */}
         <div className="relative px-6 pt-6 md:absolute md:left-[52.13%] md:top-[39.06%] md:w-[38%] md:p-0">
-          <h1 className="text-[34px] font-bold leading-[40px] text-[#0d0f11] md:whitespace-nowrap">
+          <h1 className="text-[28px] md:text-4xl font-bold leading-[35px] md:leading-[40px] text-[#0d0f11] md:whitespace-nowrap">
             Creating Wealth Through
             <br className="hidden md:block" />{" "}
             <span className="text-[#c49227]">Entrepreneurship.</span> In America.
@@ -67,7 +67,7 @@ export default function Hero() {
             And the World.
           </h1>
 
-          <p className="mt-4 text-[13px] font-normal leading-[21px] text-[#1c1f22] md:mt-[0.83cqw] md:whitespace-nowrap">
+          <p className="mt-4 text-md font-normal leading-[21px] text-[#1c1f22] md:mt-[0.83cqw] md:whitespace-nowrap">
             Real estate builds wealth. Markets build wealth. But{" "}
             <br className="hidden md:block" />
             entrepreneurship creates wealth while creating the{" "}
@@ -78,25 +78,25 @@ export default function Hero() {
           </p>
 
           <div className="mt-6 flex items-start md:mt-[2.3cqw]">
-            <a
-              href="#"
-              className="mr-8 inline-block border-b border-[#c49227] pb-1 text-[13px] font-bold leading-[21px] tracking-[0.01em] text-[#111417] md:mr-[5.78cqw] md:w-[14.03cqw] md:border-b-[length:0.14cqw] md:pb-[0.28cqw]"
+            <Link
+              href="/about"
+              className="mr-8 inline-block border-b border-[#c49227] pb-1 text-md font-bold leading-[21px] tracking-[0.01em] text-[#111417] md:mr-[5.78cqw] md:w-[14.03cqw] md:border-b-[length:0.14cqw] md:pb-[0.28cqw]"
             >
               Explore The U Group
-            </a>
+            </Link>
 
-            <a
-              href="#"
-              className="inline-flex items-center justify-center whitespace-nowrap bg-[#c49227] px-4 py-2 text-[13px] font-bold leading-[21px] tracking-[0.02em] text-white md:h-[1.79cqw] md:w-[8.39cqw] md:p-0"
+            <Link
+              href="/ventures"
+              className="inline-flex items-center justify-center whitespace-nowrap bg-[#c49227] p-4 text-md font-bold leading-[21px] tracking-[0.02em] text-white md:h-[1.79cqw] md:w-[8.39cqw] md:p-0"
             >
               Our Ventures
-            </a>
+            </Link>
           </div>
         </div>
 
         {/* ── Left block: supporting statement ─────────────────────── */}
         <div className="relative px-6 pb-12 pt-8 md:absolute md:left-[8.8%] md:top-[69.9%] md:p-0">
-          <p className="max-w-[390px] text-[13px] font-normal leading-[21px] text-[#14171a] md:max-w-none md:whitespace-nowrap">
+          <p className="max-w-[390px] text-md font-normal leading-[21px] text-[#14171a] md:max-w-none md:whitespace-nowrap">
             <strong className="font-bold">The U Group</strong> builds, funds,
             advises, and scales{" "}
             <br className="hidden md:block" />

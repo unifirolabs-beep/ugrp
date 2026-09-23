@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: "Liberation Sans", "Libertinus Sans", sans-serif;
+  --font-serif: "Liberation Sans", "Libertinus Sans", sans-serif;
+  --font-mono: "DejaVu Sans Mono", "DejaVu Sans", monospace;
+  --font-liberation: "Liberation Sans", "Libertinus Sans", sans-serif;
+  --font-dejavu: "DejaVu Sans Mono", "DejaVu Sans", monospace;
+  --font-mono-dejavu: "DejaVu Sans Mono", "DejaVu Sans", monospace;
+  --font-mono-brand: "DejaVu Sans Mono", "DejaVu Sans", monospace;
+}
+
 /* ==========================================
    FONT DEFINITIONS
    ========================================== */
@@ -48,12 +58,39 @@
   font-display: swap;
 }
 
+/* DejaVu Sans alias */
+@font-face {
+  font-family: "DejaVu Sans";
+  src: url("/fonts/DejaVuSansMono-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ==========================================
-   UTILITY HELPER CLASSES
-   Matches your font-mono-dejavu references
+   GLOBAL FONT APPLIANCE
    ========================================== */
-.font-mono-dejavu {
-  font-family: "DejaVu Sans Mono", monospace;
+:root,
+html,
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Liberation Sans", "Libertinus Sans", sans-serif;
+}
+
+/* Utility classes */
+.font-liberation,
+.font-sans {
+  font-family: "Liberation Sans", "Libertinus Sans", sans-serif !important;
+}
+
+.font-mono-dejavu,
+.font-mono-brand,
+.font-dejavu,
+.font-mono {
+  font-family: "DejaVu Sans Mono", "DejaVu Sans", monospace !important;
 }
 
 /* ==========================================

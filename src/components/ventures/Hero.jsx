@@ -244,7 +244,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="w-full bg-[#FAF8F3] text-[#111315] font-serif overflow-x-hidden">
+    <div className="w-full bg-[#f6f4f0] text-[#111315] font-sans overflow-x-hidden">
       {/* ========================================================= */}
       {/* 1. HERO SECTION                                           */}
       {/* Contains floating arch of 9 cards and headline callout    */}

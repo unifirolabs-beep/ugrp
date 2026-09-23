@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Legacy() {
   return (
@@ -6,26 +7,12 @@ export default function Legacy() {
       <div className="mx-auto max-w-[1920px]">
         {/* Section heading */}
         <div className="mb-10 flex items-center justify-center gap-3 md:mb-[3vw]">
-          <span
-            className="font-mono-dejavu text-[10px] font-bold leading-[14px] text-[#111417]"
-            style={{ fontFamily: '"DejaVu Sans Mono", monospace' }}
-          >
-            ✣
-          </span>
-
           <h2
-            className="font-liberation text-[24px] font-bold leading-[30px] text-[#c49227]"
+            className="font-liberation text-4xl font-bold leading-none text-[#CEA44D]"
             style={{ fontFamily: '"Liberation Sans", sans-serif' }}
           >
             Our Legacy
           </h2>
-
-          <span
-            className="font-mono-dejavu text-[10px] font-bold leading-[14px] text-[#111417]"
-            style={{ fontFamily: '"DejaVu Sans Mono", monospace' }}
-          >
-            ✣
-          </span>
         </div>
 
         {/* Content */}
@@ -33,7 +20,7 @@ export default function Legacy() {
           {/* Left content */}
           <div className="md:w-[48%]">
             <h3
-              className="font-liberation text-[34px] font-bold leading-[40px] text-[#17191b]"
+              className="font-liberation text-4xl font-bold leading-[40px] text-[#17191b]"
               style={{ fontFamily: '"Liberation Sans", sans-serif' }}
             >
               Entrepreneurship Is Our
@@ -42,7 +29,7 @@ export default function Legacy() {
             </h3>
 
             <div
-              className="font-liberation mt-6 space-y-4 text-[13px] font-normal leading-[21px] text-[#25272a] md:mt-[2vw] md:space-y-[1vw]"
+              className="font-liberation mt-6 space-y-4 text-md font-normal leading-[21px] text-[#16181A] md:mt-[2vw] md:space-y-[1vw]"
               style={{ fontFamily: '"Liberation Sans", sans-serif' }}
             >
               <p>
@@ -70,13 +57,13 @@ export default function Legacy() {
               </p>
             </div>
 
-            <a
-              href="#"
-              className="font-liberation mt-6 inline-block border-b-2 border-[#c49227] pb-1 text-[13px] font-bold leading-[21px] text-[#17191b] md:mt-[1.8vw]"
+            <Link
+              href="/about"
+              className="font-liberation mt-6 inline-block border-b-2 border-[#c49227] pb-1 text-md font-bold leading-[21px] text-[#17191b] md:mt-[1.8vw]"
               style={{ fontFamily: '"Liberation Sans", sans-serif' }}
             >
               Explore The U Group
-            </a>
+            </Link>
           </div>
 
           {/* Right image */}

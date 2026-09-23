@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, useInView, useReducedMotion } from "framer-motion";
-import AboutParagraph from "./AboutParagraph";
+import AboutParagraph from "@/components/about/AboutParagraph";
 
 // Only dated milestones established in the supplied design are used.
 const milestones = [

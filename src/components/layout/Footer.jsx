@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
     return (
@@ -13,9 +14,9 @@ export default function Footer() {
                             <Image
                                 src="/images/navbar/logo.png"
                                 alt="The U Group"
-                                className="h-[60px] w-[76px] object-contain"
-                                width={76}
-                                height={60}
+                                className="object-contain"
+                                width={102}
+                                height={68}
                                 priority
                             />
                         </div>
@@ -28,105 +29,105 @@ export default function Footer() {
 
                     {/* Company */}
                     <div className="pt-[48px] max-[901px]:w-[calc(50%-15px)] max-[901px]:pt-0 max-[601px]:min-w-0">
-                        <h3 className="font-mono-brand text-[11px] font-bold tracking-[0.08em] text-[#c49227]">
+                        <h3 className="font-mono-brand text-[11px] font-bold tracking-[0.08em] text-[#CEA44D]">
                             COMPANY
                         </h3>
 
                         <div className="mt-[20px] flex flex-col gap-[11px]">
-                            <a
+                            <Link
                                 href="/about"
                                 className="font-liberation text-[13px] text-[#d7d7d7] transition-opacity hover:opacity-65"
                             >
                                 About Us
-                            </a>
+                            </Link>
 
-                            <a
+                            <Link
                                 href="#"
                                 className="font-liberation text-[13px] text-[#d7d7d7] transition-opacity hover:opacity-65"
                             >
                                 Intelligent Capital Advisory
-                            </a>
+                            </Link>
 
-                            <a
+                            <Link
                                 href="#"
                                 className="font-liberation text-[13px] text-[#d7d7d7] transition-opacity hover:opacity-65"
                             >
                                 Leadership
-                            </a>
+                            </Link>
 
-                            <a
-                                href="#"
+                            <Link
+                                href="/ventures"
                                 className="font-liberation text-[13px] text-[#d7d7d7] transition-opacity hover:opacity-65"
                             >
                                 Ventures
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
                     {/* Ventures */}
                     <div className="ml-[70px] pt-[48px] max-[901px]:ml-0 max-[901px]:w-[calc(50%-15px)] max-[901px]:pt-0 max-[601px]:min-w-0">
-                        <h3 className="font-mono-brand text-[11px] font-bold tracking-[0.08em] text-[#c49227]">
+                        <h3 className="font-mono-brand text-[11px] font-bold tracking-[0.08em] text-[#CEA44D]">
                             VENTURES
                         </h3>
 
                         <div className="mt-[20px] flex flex-col gap-[11px]">
-                            <a
+                            <Link
                                 href="#"
                                 className="font-liberation text-[13px] text-[#d7d7d7] transition-opacity hover:opacity-65"
                             >
                                 Portfolio & Partnerships
-                            </a>
+                            </Link>
 
-                            <a
+                            <Link
                                 href="#"
                                 className="font-liberation text-[13px] text-[#d7d7d7] transition-opacity hover:opacity-65"
                             >
                                 JuJu Labs
-                            </a>
+                            </Link>
 
-                            <a
+                            <Link
                                 href="#"
                                 className="font-liberation text-[13px] text-[#d7d7d7] transition-opacity hover:opacity-65"
                             >
                                 Bioved
-                            </a>
+                            </Link>
 
-                            <a
+                            <Link
                                 href="#"
                                 className="font-liberation text-[13px] text-[#d7d7d7] transition-opacity hover:opacity-65"
                             >
                                 VenIQ
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
                     {/* Capital & Advisory */}
                     <div className="ml-[70px] pt-[48px] max-[901px]:ml-0 max-[901px]:w-[calc(50%-15px)] max-[901px]:pt-0 max-[601px]:min-w-0">
-                        <h3 className="font-mono-brand text-[11px] font-bold tracking-[0.08em] text-[#c49227]">
+                        <h3 className="font-mono-brand text-[11px] font-bold tracking-[0.08em] text-[#CEA44D]">
                             CAPITAL & ADVISORY
                         </h3>
 
                         <div className="mt-[20px] flex flex-col gap-[11px]">
-                            <a
+                            <Link
                                 href="#"
                                 className="font-liberation text-[13px] text-[#d7d7d7] transition-opacity hover:opacity-65"
                             >
                                 Intelligent Capital Advisory
-                            </a>
+                            </Link>
 
-                            <a
+                            <Link
                                 href="#"
                                 className="font-liberation text-[13px] text-[#d7d7d7] transition-opacity hover:opacity-65"
                             >
                                 Blink Equity Capital
-                            </a>
+                            </Link>
 
-                            <a
+                            <Link
                                 href="#"
                                 className="font-liberation text-[13px] text-[#d7d7d7] transition-opacity hover:opacity-65"
                             >
                                 Blink Bridge Capital
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -138,9 +139,11 @@ export default function Footer() {
                     © 2026 The U Group LLC. All Rights Reserved.
                 </p>
 
-                <p className="font-liberation text-[11px] text-[#555555]">
-                    Designed and Built by UNIFIROLABS
-                </p>
+                <Link href="https://unifirolabs.com" target="_blank">
+                    <p className="font-liberation text-[11px] text-[#555555] transition-colors hover:text-[#CEA44D]">
+                        Designed & Built by UNIFIROLABS
+                    </p>
+                </Link>
             </div>
         </footer>
     );
