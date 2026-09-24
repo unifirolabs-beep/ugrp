@@ -8,9 +8,9 @@ export default function CaseStudies() {
       className="scroll-mt-[30px] py-[70px] max-[701px]:py-[42px] mx-auto max-w-[900px]"
       aria-labelledby="case-title"
     >
-      <SectionHeading number="02" id="case-title">
-        From case studies to proof.
-      </SectionHeading>
+      <h2 className="text-4xl text-black font-semibold text-center">
+          From Case Studies to Proof.
+      </h2>
       <CaseStudyCard
         number="01"
         category="Consumer science"

@@ -3,18 +3,13 @@ import AboutParagraph from "./AboutParagraph";
 import Reveal from "./Reveal";
 
 export default function ExperienceCard({ title, children, index }) {
-  const isFeatured = index === 0;
-  const cardStyleClass = isFeatured
-    ? "border-[#cea44d] bg-[#cea44d] [&_p]:text-[#302611]"
-    : "border-[#c9c2b7] bg-[#f6f4f0]";
-
   return (
     <Reveal delay={index * 0.07}>
       <article
-        className={`relative flex gap-6 rounded-[14px] border px-[30px] py-[25px] transition-[border-color,box-shadow] duration-250 hover:border-[#c6952d] hover:shadow-[0_10px_25px_#16181a08] [&>img]:mt-[3px] [&>img]:size-[42px] [&>img]:shrink-0 [&>img]:self-start [&>img]:object-contain [&_h3]:mb-1.5 [&_h3]:pr-2.5 max-[901px]:gap-[15px] max-[901px]:p-[22px] ${cardStyleClass}`}
+        className="relative flex gap-6 rounded-[14px] border border-[#c9c2b7] bg-[#f6f4f0] px-[30px] py-[25px] transition-all duration-300 hover:border-[#cea44d] hover:bg-[#cea44d] hover:shadow-[0_10px_25px_#16181a08] [&>img]:mt-[3px] [&>img]:size-[42px] [&>img]:shrink-0 [&>img]:self-start [&>img]:object-contain [&_h3]:mb-1.5 [&_h3]:pr-2.5 hover:[&_p]:text-[#302611] max-[901px]:gap-[15px] max-[901px]:p-[22px]"
       >
         <Image
-          src={`/images/about/${isFeatured ? "rocket-light" : "rocket"}.svg`}
+          src="/images/about/rocket.svg"
           alt=""
           width={42}
           height={42}

@@ -1,14 +1,10 @@
 import AboutParagraph from "./AboutParagraph";
 import Reveal from "./Reveal";
 
-export default function TrackRecordCard({ value, title, children, featured }) {
-  const cardStyleClass = featured
-    ? "border-[#cea44d] bg-[#cea44d] [&_p]:text-[#302611]"
-    : "border-[#c9c2b7] bg-[#f6f4f0]";
-
+export default function TrackRecordCard({ value, title, children }) {
   return (
     <Reveal>
-      <article className={`rounded-[10px] border px-[25px] py-[22px] [&_h3]:mb-[7px] ${cardStyleClass}`}>
+      <article className="rounded-[10px] border border-[#c9c2b7] bg-[#f6f4f0] px-[25px] py-[22px] transition-all duration-300 hover:border-[#cea44d] hover:bg-[#cea44d] [&_h3]:mb-[7px] hover:[&_p]:text-[#302611]">
         <h3>
           <span className="font-bold">{value}</span> {title}
         </h3>

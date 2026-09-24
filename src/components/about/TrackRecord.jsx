@@ -16,7 +16,7 @@ export default function TrackRecord() {
       <div className="grid grid-cols-[.9fr_1.1fr] gap-7 [&>div:first-child]:min-h-[420px] max-[701px]:grid-cols-1 max-[701px]:[&>div:first-child]:min-h-[350px]">
         <AboutImage />
         <div className="grid gap-3.5">
-          <TrackRecordCard value="20+" title="years of experience" featured>
+          <TrackRecordCard value="20+" title="years of experience">
             Building, advising, and executing since 2005.
           </TrackRecordCard>
           <TrackRecordCard value="$100M+" title="revenue division acquired">

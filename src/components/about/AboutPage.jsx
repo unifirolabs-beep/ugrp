@@ -16,7 +16,6 @@ export default function AboutPage() {
       <div className="mx-auto w-[calc(100%-48px)] max-w-[1040px] max-[701px]:w-[calc(100%-36px)]">
         <AboutHero />
         <OurStory />
-        <StoryTimeline />
         <ExperienceSection />
         <CaseStudies />
         <EcosystemSection />

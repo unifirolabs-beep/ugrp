@@ -13,9 +13,9 @@ const frontiers = [
 export default function EcosystemSection() {
   return (
     <section className="scroll-mt-[30px] py-[70px] max-[701px]:py-[42px]" aria-labelledby="ecosystem-title">
-      <SectionHeading number="03" id="ecosystem-title">
-        Our ecosystem.
-      </SectionHeading>
+        <h2 className="text-4xl text-black font-semibold text-center mb-8">
+            Our Ecosystem.
+        </h2>
       <div className="grid grid-cols-[.9fr_1.1fr] items-center gap-20 [&>div]:min-w-0 max-[901px]:gap-[35px] max-[701px]:grid-cols-1 max-[701px]:gap-7">
         <Reveal>
           <h3 className="mb-5 text-[26px]! leading-[33px]! font-normal!">

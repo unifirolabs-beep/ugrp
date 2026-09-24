@@ -9,7 +9,7 @@ export default function OurStory() {
       aria-label="Our founding belief"
     >
       <Reveal>
-        <AboutParagraph className="text-[19px]! leading-[29px]! text-[#16181a]! first-letter:text-[34px] first-letter:font-bold">
+        <AboutParagraph className="text-lg leading-[29px]! text-[#16181a]! first-letter:text-xl first-letter:font-bold">
           We started in 2005 with a simple, almost stubborn belief:{" "}
           <strong>value doesn&apos;t disappear, it hides.</strong>
         </AboutParagraph>
