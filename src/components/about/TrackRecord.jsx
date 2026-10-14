@@ -6,9 +6,9 @@ import TrackRecordCard from "./TrackRecordCard";
 export default function TrackRecord() {
   return (
     <section className="scroll-mt-[30px] py-[70px] max-[701px]:py-[42px]" aria-labelledby="record-title">
-      <SectionHeading number="04" id="record-title">
-        Track record.
-      </SectionHeading>
+      <h2 className="text-4xl text-black font-bold text-center py-8">
+        Track Record
+      </h2>
       <AboutParagraph className="mx-auto -mt-3.5 mb-[35px] max-w-[600px] text-center">
         Two decades of turning challenging opportunities into executable strategies, stronger businesses, and meaningful transactions.
       </AboutParagraph>

@@ -60,10 +60,9 @@ export default function Experience() {
           {/* Center image */}
           <div className="relative order-first aspect-[0.98/1] self-center overflow-hidden rounded-[7px] border-2 border-[#c49227] sm:col-span-2 md:order-none md:col-span-1 md:row-span-2">
             <Image
-              src="/images/home/legacy.png"
+              src="/images/diverse_people_3.jpg"
               alt="The U Group team"
               fill
-              sizes="(min-width: 768px) 28vw, 100vw"
               className="object-cover"
             />
           </div>

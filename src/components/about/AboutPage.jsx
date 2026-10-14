@@ -1,6 +1,5 @@
 import AboutHero from "./AboutHero";
 import OurStory from "./OurStory";
-import StoryTimeline from "./StoryTimeline";
 import ExperienceSection from "./ExperienceSection";
 import CaseStudies from "./CaseStudies";
 import EcosystemSection from "./EcosystemSection";

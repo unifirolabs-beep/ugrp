@@ -16,13 +16,12 @@ export default function OurStory() {
       </Reveal>
       <Reveal>
         <AboutParagraph>
-          Inside a struggling division. Inside a founder who&apos;s run out of runway but not out of conviction. Inside an idea nobody&apos;s financed yet because nobody&apos;s finished believing in it.
+          It hides inside a struggling division. Inside a founder who's run out of runway but not out of conviction. Inside an idea nobody's financed yet because nobody's finished believing in it.
         </AboutParagraph>
       </Reveal>
       <Reveal>
         <AboutParagraph>
-          Our job was never to invent value out of nothing. It was to find where it was already buried, and have the patience and the capital to dig it out.
-        </AboutParagraph>
+          Our job was never to invent value out of nothing , it was to find where it was already buried, and have the patience and the capital to dig it out.        </AboutParagraph>
       </Reveal>
     </section>
   );

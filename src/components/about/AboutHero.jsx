@@ -15,10 +15,10 @@ export default function AboutHero() {
         <h1 id="about-title">
           <span className="text-4xl text-[#CEA44D] tracking-wider">Twenty years of learning.</span>
           <br />
-          What that really means.
+          What Commitment Really Means
         </h1>
         <AboutParagraph>
-          Every business has a moment it could have quit and didn&apos;t. The U Group has had several — and we didn&apos;t walk away from a single one without learning something we refused to unlearn.
+          Every business has a moment it could have quit and didn&apos;t. The U Group has had several. We never walked away and we always learned something we refuse to unlearn.
         </AboutParagraph>
         <div className="mt-7 flex items-center justify-center gap-[30px] text-[13px] font-bold [&_a]:transition-colors [&_a]:duration-200 [&_a_span]:ml-[13px] max-[701px]:flex-wrap max-[701px]:gap-5">
           <Link

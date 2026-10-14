@@ -70,7 +70,7 @@ export default function Legacy() {
           <div className="relative w-full md:w-[42%]">
             <div className="relative aspect-[1.02/1] w-full overflow-hidden rounded-[7px] border-2 border-[#c49227]">
               <Image
-                src="/images/home/legacy.png"
+                src="/images/legacy.jpg"
                 alt="The U Group team"
                 fill
                 sizes="(min-width: 768px) 42vw, 100vw"

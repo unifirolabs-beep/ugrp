@@ -1,5 +1,4 @@
 import CaseStudyCard from "./CaseStudyCard";
-import SectionHeading from "./SectionHeading";
 
 export default function CaseStudies() {
   return (
