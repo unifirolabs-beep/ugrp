@@ -86,7 +86,7 @@ function StatCard({ stat }) {
 
   return (
     <div
-      className={`relative flex min-h-[145px] flex-col justify-center bg-[#9d9997] text-white hover:bg-[#CEA44D] transition-colors duration-300 ease-in-out rounded-[7px] px-5 py-5 md:min-h-0 md:px-[1vw] md:py-[1vw]`}
+      className={`relative flex min-h-[145px] flex-col justify-center bg-[#CEA44D] text-white rounded-[7px] px-5 py-5 md:min-h-0 md:px-[1vw] md:py-[1vw]`}
     >
       {/* Icon */}
       <div

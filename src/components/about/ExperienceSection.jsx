@@ -42,7 +42,7 @@ export default function ExperienceSection() {
               return (
                 <div
                   key={title}
-                  className="sticky rounded-[14px] border border-[#c9c2b7] bg-[#f6f4f0] px-[30px] py-[25px] flex gap-6 items-start transition-all duration-300 hover:border-[#cea44d] hover:bg-[#cea44d] hover:shadow-[0_10px_25px_#16181a08] [&>img]:mt-[3px] [&>img]:size-[42px] [&>img]:shrink-0 [&>img]:self-start [&>img]:object-contain [&_h3]:mb-1.5 [&_h3]:pr-2.5 hover:[&_p]:text-[#302611] max-[901px]:gap-[15px] max-[901px]:p-[22px]"
+                  className="sticky rounded-[14px] border border-[#cea44d] bg-[#cea44d] px-[30px] py-[25px] text-black flex gap-6 items-start [&>img]:mt-[3px] [&>img]:size-[42px] [&>img]:shrink-0 [&>img]:self-start [&>img]:object-contain [&_h3]:mb-1.5 [&_h3]:pr-2.5 max-[901px]:gap-[15px] max-[901px]:p-[22px]"
                   style={{
                     top: `${topOffset}px`,
                     zIndex: index + 1,
@@ -56,10 +56,10 @@ export default function ExperienceSection() {
                   />
                   <div className="flex-1">
                     <h3>{title}</h3>
-                    <AboutParagraph>{text}</AboutParagraph>
+                    <p className="text-black text-md font-libration">{text}</p>
                   </div>
                   <span
-                    className="absolute top-3 right-3.5 font-mono-brand text-[9px] text-[#767067]"
+                    className="absolute top-3 right-3.5 font-mono-brand text-[9px] text-black"
                     aria-hidden="true"
                   >
                     0{index + 1}

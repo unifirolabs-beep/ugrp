@@ -54,14 +54,14 @@ export default function WhyUs() {
           {cards.map((card, index) => (
             <div
               key={card.title}
-              className={`flex min-h-[145px] flex-col md:col-span-2 bg-[#9A9390] text-white hover:bg-[#CEA44D] justify-between rounded-[8px] px-5 py-5 md:min-h-[9.8vw] md:px-[1.1vw] md:py-[1.15vw] transition duration-300 ease-in-out`}
+              className={`flex min-h-[145px] flex-col md:col-span-2 bg-[#CEA44D] text-white justify-between rounded-[8px] px-5 py-5 md:min-h-[9.8vw] md:px-[1.1vw] md:py-[1.15vw]`}
             >
               <div>
-                <h3 className="font-liberation whitespace-pre-line text-lg font-bold leading-[22px]">
+                <h3 className="font-liberation whitespace-pre-line text-lg text-white font-bold leading-[22px]">
                   {card.title}
                 </h3>
 
-                <p className="font-liberation mt-4 text-md font-normal leading-[15px]">
+                <p className="font-liberation mt-4 text-md text-white font-normal leading-[15px]">
                   {card.description}
                 </p>
               </div>

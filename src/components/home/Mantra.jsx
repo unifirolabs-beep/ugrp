@@ -43,7 +43,7 @@ export default function Mantra() {
   const [active, setActive] = useState(null);
 
   return (
-    <section className="w-full overflow-hidden bg-[#f6f4f0] px-6 py-16 md:px-[5vw] md:py-[5vw]">
+    <section className="w-full overflow-hidden bg-[#f6f4f0] px-6 py-8">
       <div className="mx-auto max-w-[1400px]">
         {/* =========================
             HEADING
@@ -62,19 +62,13 @@ export default function Mantra() {
             MAIN INTERACTIVE AREA
         ========================== */}
         <div
-          className="relative mx-auto mt-10 aspect-[1.45/1] w-full max-w-[1100px] md:mt-[3vw]"
-          onMouseLeave={() => setActive(null)}
+          className="relative mx-auto mt-2 aspect-[1.7/1] w-full max-w-[1100px]"
         >
           {/* =========================
               CAPITALIZATION TEXT
           ========================== */}
           <div
-            className={`pointer-events-none absolute right-[76%] top-[27.3%] z-10 w-[23%] origin-right -translate-y-1/2 pr-3 text-right transition-all duration-500 md:right-[76%] md:top-[27.3%] md:w-[24%] ${active === null
-              ? "scale-100 opacity-[0.035]"
-              : active === "capitalization"
-                ? "scale-110 opacity-100"
-                : "scale-100 opacity-[0.035]"
-              }`}
+            className={`pointer-events-none absolute right-[76%] top-[27.3%] z-10 w-[23%] origin-right -translate-y-1/2 pr-3 text-right transition-all duration-500 md:right-[76%] md:top-[27.3%] md:w-[24%]`}
           >
             <h3 className="font-liberation text-md font-bold leading-[22px] text-[#17191d]">
               Capitalization
@@ -87,8 +81,7 @@ export default function Mantra() {
 
           {/* Connector: Capitalization → Icon */}
           <div
-            className={`pointer-events-none absolute right-[63.5%] top-[27.3%] z-10 h-px w-[12.5%] -translate-y-1/2 bg-[#9d9997] transition-opacity duration-500 ${active === "capitalization" ? "opacity-100" : "opacity-0"
-              }`}
+            className={`pointer-events-none absolute right-[63.5%] top-[27.3%] z-10 h-px w-[12.5%] -translate-y-1/2 bg-[#9d9997] transition-opacity duration-500`}
           >
             <span className="absolute -left-1 top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-[#9d9997]" />
           </div>
@@ -97,12 +90,7 @@ export default function Mantra() {
               SALES EXPANSION TEXT
           ========================== */}
           <div
-            className={`pointer-events-none absolute left-[76%] top-[27.3%] z-10 w-[28%] origin-left -translate-y-1/2 pl-3 transition-all duration-500 md:left-[76%] md:top-[27.3%] md:w-[28%] ${active === null
-              ? "scale-100 opacity-[0.035]"
-              : active === "sales"
-                ? "scale-110 opacity-100"
-                : "scale-100 opacity-[0.035]"
-              }`}
+            className={`pointer-events-none absolute left-[76%] top-[27.3%] z-10 w-[28%] origin-left -translate-y-1/2 pl-3 transition-all duration-500 md:left-[76%] md:top-[27.3%] md:w-[28%] `}
           >
             <h3 className="font-liberation text-[16px] font-bold leading-[22px] text-[#17191d]">
               Sales Expansion
@@ -116,8 +104,7 @@ export default function Mantra() {
 
           {/* Connector: Sales → Icon */}
           <div
-            className={`pointer-events-none absolute left-[63.5%] top-[27.3%] z-10 h-px w-[12.5%] -translate-y-1/2 bg-[#c49227] transition-opacity duration-500 ${active === "sales" ? "opacity-100" : "opacity-0"
-              }`}
+            className={`pointer-events-none absolute left-[63.5%] top-[27.3%] z-10 h-px w-[12.5%] -translate-y-1/2 bg-[#c49227] transition-opacity duration-500`}
           >
             <span className="absolute -right-1 top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-[#c49227]" />
           </div>
@@ -126,12 +113,7 @@ export default function Mantra() {
               BUSINESS INFRASTRUCTURE TEXT
           ========================== */}
           <div
-            className={`pointer-events-none absolute right-[76%] top-[72.7%] z-10 w-[25%] origin-right -translate-y-1/2 pr-3 text-right transition-all duration-500 md:right-[76%] md:top-[72.7%] md:w-[25%] ${active === null
-              ? "scale-100 opacity-[0.035]"
-              : active === "infrastructure"
-                ? "scale-110 opacity-100"
-                : "scale-100 opacity-[0.035]"
-              }`}
+            className={`pointer-events-none absolute right-[76%] top-[72.7%] z-10 w-[25%] origin-right -translate-y-1/2 pr-3 text-right transition-all duration-500 md:right-[76%] md:top-[72.7%] md:w-[25%]`}
           >
             <h3 className="font-liberation text-[16px] font-bold leading-[22px] text-[#17191d]">
               Business Infrastructure
@@ -145,8 +127,7 @@ export default function Mantra() {
 
           {/* Connector: Infrastructure → Icon */}
           <div
-            className={`pointer-events-none absolute right-[63.5%] top-[72.7%] z-10 h-px w-[12.5%] -translate-y-1/2 bg-[#9d9997] transition-opacity duration-500 ${active === "infrastructure" ? "opacity-100" : "opacity-0"
-              }`}
+            className={`pointer-events-none absolute right-[63.5%] top-[72.7%] z-10 h-px w-[12.5%] -translate-y-1/2 bg-[#9d9997] transition-opacity duration-500`}
           >
             <span className="absolute -left-1 top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-[#9d9997]" />
           </div>
@@ -155,12 +136,7 @@ export default function Mantra() {
               GROWTH STRATEGY TEXT
           ========================== */}
           <div
-            className={`pointer-events-none absolute left-[76%] top-[72.7%] z-10 w-[27%] origin-left -translate-y-1/2 pl-3 transition-all duration-500 md:left-[76%] md:top-[72.7%] md:w-[27%] ${active === null
-              ? "scale-100 opacity-[0.035]"
-              : active === "growth"
-                ? "scale-110 opacity-100"
-                : "scale-100 opacity-[0.035]"
-              }`}
+            className={`pointer-events-none absolute left-[76%] top-[72.7%] z-10 w-[27%] origin-left -translate-y-1/2 pl-3 transition-all duration-500 md:left-[76%] md:top-[72.7%] md:w-[27%]`}
           >
             <h3 className="font-liberation text-[16px] font-bold leading-[22px] text-[#17191d]">
               Growth Strategy
@@ -174,8 +150,7 @@ export default function Mantra() {
 
           {/* Connector: Growth → Icon */}
           <div
-            className={`pointer-events-none absolute left-[63.5%] top-[72.7%] z-10 h-px w-[12.5%] -translate-y-1/2 bg-[#17191d] transition-opacity duration-500 ${active === "growth" ? "opacity-100" : "opacity-0"
-              }`}
+            className={`pointer-events-none absolute left-[63.5%] top-[72.7%] z-10 h-px w-[12.5%] -translate-y-1/2 bg-[#17191d] transition-opacity duration-500`}
           >
             <span className="absolute -right-1 top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-[#17191d]" />
           </div>
