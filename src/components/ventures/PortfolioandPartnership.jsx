@@ -62,7 +62,7 @@ const VENTURES_DATA = [
       "VenIQ is an AI-native venture intelligence platform built to help entrepreneurs make better decisions, identify risks earlier, and avoid preventable failures. Its Venture IQ Score combines venture memory, intelligent guardrails, and decision intelligence to provide founders with continuous insight as they build.",
     focusAreas: ["Artificial Intelligence", "Venture Intelligence", "Entrepreneurship"],
     highlightBox: "Passion starts ventures. Intelligence sustains them.",
-    buttonText: "EXPLORE JUJU LABS →",
+    buttonText: "EXPLORE VenIQ →",
     image: GREEN_FOUNDER,
     founderName: "Founder Name",
     founderRole: "co-founder",

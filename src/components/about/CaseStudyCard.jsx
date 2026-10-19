@@ -1,8 +1,14 @@
-import AboutImage from "./AboutImage";
 import AboutParagraph from "./AboutParagraph";
 import Reveal from "./Reveal";
 
-export default function CaseStudyCard({ number, category, title, children }) {
+export default function CaseStudyCard({
+  number,
+  category,
+  title,
+  imageSrc,
+  imageAlt = "",
+  children,
+}) {
   const isSecondCard = number === "02";
   const gridLayoutClass = isSecondCard
     ? "min-[701px]:grid-cols-[1fr_220px] min-[701px]:[&>div:first-child]:order-2"
@@ -12,7 +18,14 @@ export default function CaseStudyCard({ number, category, title, children }) {
     <article
       className={`mt-7 grid gap-7 max-[701px]:grid-cols-1 max-[701px]:gap-3 max-[701px]:[&>div:first-child]:min-h-[235px] ${gridLayoutClass}`}
     >
-      <AboutImage position={isSecondCard ? "85% center" : "65% center"} />
+      <div className="relative overflow-hidden rounded-xl border border-[#c9c2b7]">
+        <img
+          src={imageSrc}
+          alt={imageAlt || title}
+          className="h-full w-full object-cover object-center min-h-[235px]"
+        />
+      </div>
+
       <Reveal className="content-center rounded-xl border border-[#c9c2b7] p-[30px] [&_h3]:mb-2.5 max-[701px]:p-[25px]">
         <div className="mb-[18px] flex items-center gap-5 [&>span:first-child]:font-mono-brand [&>span:first-child]:text-[28px]/none [&>span:first-child]:text-[#CEA44D] max-[701px]:gap-[15px]">
           <span>{number}</span>
