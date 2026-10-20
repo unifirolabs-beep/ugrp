@@ -9,7 +9,7 @@ export default function AboutHero() {
       aria-labelledby="about-title"
     >
       <Reveal>
-        <span className="block font-mono-brand text-xl font-bold tracking-[.24em] uppercase text-[#CEA44D]">
+        <span className="block text-xl font-bold tracking-[.24em] uppercase text-[#CEA44D]">
           OUR STORY
         </span>
         <h1 id="about-title">
@@ -17,7 +17,7 @@ export default function AboutHero() {
           <br />
           What Commitment Really Means
         </h1>
-        <AboutParagraph>
+        <AboutParagraph className="text-lg">
           Every business has a moment it could have quit and didn&apos;t. The U Group has had several. We never walked away and we always learned something we refuse to unlearn.
         </AboutParagraph>
         <div className="mt-7 flex items-center justify-center gap-[30px] text-[13px] font-bold [&_a]:transition-colors [&_a]:duration-200 [&_a_span]:ml-[13px] max-[701px]:flex-wrap max-[701px]:gap-5">
@@ -28,7 +28,7 @@ export default function AboutHero() {
             Explore The U Group
           </Link>
           <Link
-            className="bg-[#CEA44D] px-[17px] py-[11px] text-[#16181a] hover:bg-[#dfb757]"
+            className="bg-[#CEA44D] px-[17px] py-[11px] text-white hover:bg-[#dfb757]"
             href="/ventures"
           >
             Our ventures

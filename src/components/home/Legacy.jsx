@@ -29,7 +29,7 @@ export default function Legacy() {
             </h3>
 
             <div
-              className="font-liberation mt-6 space-y-4 text-md font-normal leading-[21px] text-[#16181A] md:mt-[2vw] md:space-y-[1vw]"
+              className="font-liberation mt-6 space-y-4 text-lg leading-[28px] text-[#16181A] md:mt-[2vw] md:space-y-[1vw]"
               style={{ fontFamily: '"Liberation Sans", sans-serif' }}
             >
               <p>

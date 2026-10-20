@@ -45,14 +45,14 @@ export default function Hero() {
               </button>
             </Link>
             <Link href="/ventures">
-              <button className="bg-[#CEA44D] text-[#16181A] font-medium text-sm md:text-base px-6 py-2.5 rounded cursor-pointer hover:bg-[#b8913f] transition-colors">
+              <button className="bg-[#CEA44D] text-[#16181A] font-medium text-sm md:text-base px-4 py-2 rounded cursor-pointer hover:bg-[#b8913f] transition-colors">
                 Our Ventures
               </button>
             </Link>
           </div>
 
           {/* Bottom Statement */}
-          <p className="text-base md:text-lg lg:text-xl text-[#16181A]/90 leading-relaxed font-normal max-w-2xl pt-2">
+          <p className="text-base md:text-lg lg:text-2xl text-[#16181A]/90 leading-relaxed font-normal max-w-2xl pt-2">
             <strong className="text-[#16181A] font-bold">The U Group</strong> builds, funds, advises, and scales ventures with one goal:{" "}
             <strong className="text-[#16181A] font-bold">create lasting value for founders, investors, and the communities around them.</strong>
           </p>

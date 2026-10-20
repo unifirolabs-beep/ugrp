@@ -13,20 +13,20 @@ const frontiers = [
 export default function EcosystemSection() {
   return (
     <section className="scroll-mt-[30px] py-[70px] max-[701px]:py-[42px]" aria-labelledby="ecosystem-title">
-        <h2 className="text-4xl text-black font-semibold text-center mb-8">
-            Our Ecosystem.
+        <h2 className="!text-4xl text-black font-semibold text-center mb-8">
+            Our Ecosystem
         </h2>
       <div className="grid grid-cols-[.9fr_1.1fr] items-center gap-20 [&>div]:min-w-0 max-[901px]:gap-[35px] max-[701px]:grid-cols-1 max-[701px]:gap-7">
         <Reveal>
-          <h3 className="mb-5 text-[26px]! leading-[33px]! font-normal!">
+          <h3 className="mb-5 text-3xl! md:text-4xl! leading-[40px]! font-normal! md:text-left text-center">
             Different industries.
             <br />
             One operating philosophy.
           </h3>
-          <AboutParagraph>
+          <AboutParagraph className="text-xl leading-[32px] md:text-left text-center">
             We bring together capital, innovation, science, and technology to identify opportunity, build value, and create sustainable growth.
           </AboutParagraph>
-          <AboutParagraph className="mt-[25px] text-[#16181a]!">
+          <AboutParagraph className="mt-[25px] text-[#16181a]! text-xl leading-[32px] md:text-left text-center">
             <strong>
               One group. Four frontiers.
               <br />

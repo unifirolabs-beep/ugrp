@@ -9,27 +9,22 @@ import {
 const stats = [
   {
     title: "$100M+",
-    subtitle: "Commercial Division",
-    description: "Transaction Experience",
+    description: "Commercial Division Transaction Experience",
     icon: CircleDollarSign,
-    featured: true,
   },
   {
     title: "20+ Years",
-    subtitle: "Building, Advising & Growing",
-    description: "Businesses",
+    description: "Building, Advising & Growing Businesses",
     icon: Building2,
   },
   {
     title: "6 Months",
-    subtitle: "RSVI – From Bankruptcy to",
-    description: "Bankable",
+    description: "RSVI – From Bankruptcy to Bankable",
     icon: Hourglass,
   },
   {
     title: "Multi-Phase",
-    subtitle: "Acquisitions Sourced &",
-    description: "Advised for IMX",
+    description: "Acquisitions Sourced & Advised for IMX",
     icon: Share2,
   },
 ];
@@ -86,28 +81,22 @@ function StatCard({ stat }) {
 
   return (
     <div
-      className={`relative flex min-h-[145px] flex-col justify-center bg-[#CEA44D] text-white rounded-[7px] px-5 py-5 md:min-h-0 md:px-[1vw] md:py-[1vw]`}
+      className={`relative flex flex-col justify-end bg-[#CEA44D] text-white rounded-[7px] p-5`}
     >
       {/* Icon */}
       <div
-        className={`absolute right-3 top-3 flex h-7 w-7 items-center justify-center rounded-[5px] transition-colors duration-300 ease-in-out md:right-[0.65vw] md:top-[0.65vw] md:h-[2vw] md:w-[2vw]`}
+        className={`absolute right-3 top-3 flex md:h-12 md:w-12 h-8 w-8 items-center justify-center rounded-[5px] bg-white`}
       >
-        <Icon
-          size={15}
-          strokeWidth={1.7}
-          className="md:h-[1.05vw] md:w-[1.05vw]"
-        />
+        <Icon size={30} strokeWidth={1} className="text-[#CEA44D]" />
       </div>
 
       {/* Content */}
       <div>
-        <h3 className="font-liberation text-lg text-white font-bold leading-[22px]">
+        <h3 className="font-liberation text-lg md:text-3xl text-white font-bold pb-2 leading-[22px]">
           {stat.title}
         </h3>
 
-        <p className="font-liberation mt-2 text-md text-white font-normal leading-[15px]">
-          {stat.subtitle}
-          <br />
+        <p className="font-liberation mt-2 text-md md:text-lg text-white font-normal leading-[20px]">
           {stat.description}
         </p>
       </div>

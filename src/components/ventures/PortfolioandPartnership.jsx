@@ -87,10 +87,10 @@ export default function PortfolioAndPartnership() {
     <div className="w-full bg-[#f6f4f0] text-[#111315] font-sans overflow-x-hidden">
       {/* SECTION DIVIDER HEADER */}
       <div className="relative z-10 pt-12 text-center px-4">
-        <h2 className="text-[20px] sm:text-[24px] font-bold uppercase tracking-[0.12em] text-[#111315]">
+        <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-[0.12em] text-[#111315]">
           PORTFOLIO & PARTNERSHIPS
         </h2>
-        <p className="mt-1.5 text-[14px] sm:text-[16px] text-[#555A60] font-normal">
+        <p className="mt-1.5 text-md md:text-xl text-[#555A60] font-normal">
           Three Ventures. Three Frontiers. One Conviction.
         </p>
       </div>
@@ -160,31 +160,31 @@ export default function PortfolioAndPartnership() {
                 <div className="lg:col-span-7 flex flex-col justify-between py-2 sm:px-2">
                   <div>
                     {/* Header Titles */}
-                    <h3 className="text-[28px] sm:text-[32px] font-bold tracking-[0.04em] uppercase text-white">
+                    <h3 className="text-2xl md:text-4xl font-bold tracking-[0.04em] uppercase text-white">
                       {venture.title}
                     </h3>
-                    <p className="text-[12px] uppercase tracking-[0.18em] text-neutral-400 mt-1 font-mono">
+                    <p className="text-lg md:text-2xl uppercase tracking-[0.18em] text-white">
                       {venture.tagline}
                     </p>
 
                     {/* Core Proposition & Paragraph */}
-                    <h4 className="text-[19px] sm:text-[21px] font-bold mt-7 text-neutral-100">
+                    <h4 className="text-xl md:text-2xl font-bold mt-7">
                       {venture.lead}
                     </h4>
-                    <p className="mt-3 text-[14px] sm:text-[15px] leading-[24px] text-neutral-300 font-normal max-w-2xl">
+                    <p className="mt-3 text-md md:text-lg leading-[24px] font-normal max-w-2xl">
                       {venture.description}
                     </p>
 
                     {/* Focus Area Pill Tags */}
                     <div className="mt-8">
-                      <p className="text-[11px] uppercase font-bold tracking-[0.14em] text-neutral-400 mb-3 font-mono">
+                      <p className="text-md uppercase font-bold tracking-[0.14em] mb-3">
                         Focus Areas
                       </p>
                       <div className="flex flex-wrap gap-2.5">
                         {venture.focusAreas.map((tag, idx) => (
                           <span
                             key={idx}
-                            className="px-4 py-1.5 rounded-full text-[12px] text-neutral-200 border border-neutral-700/80 bg-[#212327]"
+                            className="px-4 py-1.5 rounded-xl text-md border border-white bg-[#212327]"
                           >
                             {tag}
                           </span>
@@ -198,20 +198,20 @@ export default function PortfolioAndPartnership() {
                         {venture.highlights.map((h, i) => (
                           <div
                             key={i}
-                            className="p-5 rounded-[14px] border border-neutral-800/80 bg-[#1E2024]/70"
+                            className="p-5 rounded-xl border border-white bg-[#1E2024]/70"
                           >
-                            <p className="text-[15px] font-bold text-white">
+                            <p className="text-md font-bold text-white">
                               {h.title}
                             </p>
-                            <p className="text-[12.5px] text-neutral-400 mt-1.5 leading-relaxed">
+                            <p className="text-sm mt-1.5 leading-relaxed">
                               {h.desc}
                             </p>
                           </div>
                         ))}
                       </div>
                     ) : venture.highlightBox ? (
-                      <div className="mt-8 p-5 rounded-[14px] border border-neutral-800/80 bg-[#1E2024]/70 max-w-lg">
-                        <p className="text-[14px] text-neutral-200 leading-relaxed font-medium">
+                      <div className="mt-8 p-5 rounded-xl border border-white bg-[#1E2024]/70 max-w-lg">
+                        <p className="text-lg leading-relaxed font-medium">
                           {venture.highlightBox}
                         </p>
                       </div>
@@ -220,7 +220,7 @@ export default function PortfolioAndPartnership() {
 
                   {/* Primary Exploration Action Button */}
                   <div className="mt-10 pt-2">
-                    <button className="inline-flex items-center gap-2 px-6 py-2.5 rounded-[4px] bg-white hover:bg-neutral-100 text-neutral-950 text-[11px] font-bold tracking-wider uppercase transition cursor-pointer font-mono shadow-sm">
+                    <button className="inline-flex items-center gap-2 px-6 py-2.5 rounded-[4px] bg-white hover:bg-neutral-100 text-neutral-950 text-[11px] font-bold tracking-wider uppercase transition cursor-pointer shadow-sm">
                       {venture.buttonText}
                     </button>
                   </div>

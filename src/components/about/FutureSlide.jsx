@@ -1,6 +1,6 @@
-import AboutImage from "./AboutImage";
 import AboutParagraph from "./AboutParagraph";
 import Reveal from "./Reveal";
+import Image from "next/image";
 
 export default function FutureSlide({ label, year, title, children, image = false }) {
   const is2026 = year === "2026";
@@ -11,7 +11,7 @@ export default function FutureSlide({ label, year, title, children, image = fals
   return (
     <article className="grid grid-cols-1 md:grid-cols-[1.4fr_1fr] items-center gap-7 bg-[#f6f4f0] rounded-2xl sm:p-6 backdrop-blur-md [&>div:first-child]:h-[260px]">
       {image ? (
-        <AboutImage />
+        <Image src={image} alt="future image" width={600} height={600} className="rounded-xl h-full"/>
       ) : (
         <Reveal
           className={`relative flex flex-col justify-between overflow-hidden rounded-[10px] border border-[#c6952d] p-[30px] h-full ${slideStyleClass}`}

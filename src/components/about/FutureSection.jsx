@@ -1,9 +1,9 @@
 import FutureSlide from "./FutureSlide";
 
 const slides = [
-  { label: "Then", year: "2005", title: "Capital + experience", image: true },
-  { label: "Now", year: "2026", title: "Capital + experience + AI" },
-  { label: "Next", year: "The next generation", title: "Bigger ideas. Faster execution. Greater impact." },
+  { label: "Then", year: "2005", title: "Capital + Experience", image: "/images/about/captialandexperience.jpg" },
+  { label: "Now", year: "2026", title: "Capital + Experience + AI", image: "/images/about/CEAI.jpg" },
+  { label: "Next", year: "The next generation", title: "Bigger ideas. Faster execution. Greater impact.", image: "/images/about/future.jpg"},
 ];
 
 export default function FutureSection() {
@@ -18,7 +18,7 @@ export default function FutureSection() {
           {/* Left Side - Sticky Heading (Vertically Centered) */}
           <div className="lg:sticky lg:top-32 lg:h-[calc(100vh-16rem)] flex flex-col justify-center [&_h2]:mt-3.5">
             <h2 id="future-title" className="text-4xl lg:text-5xl font-bold tracking-tight text-[#16181A]">
-              The future.
+              The future
             </h2>
           </div>
 

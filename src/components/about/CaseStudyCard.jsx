@@ -27,14 +27,14 @@ export default function CaseStudyCard({
       </div>
 
       <Reveal className="content-center rounded-xl border border-[#c9c2b7] p-[30px] [&_h3]:mb-2.5 max-[701px]:p-[25px]">
-        <div className="mb-[18px] flex items-center gap-5 [&>span:first-child]:font-mono-brand [&>span:first-child]:text-[28px]/none [&>span:first-child]:text-[#CEA44D] max-[701px]:gap-[15px]">
+        <div className="mb-[18px] flex items-center gap-5 [&>span:first-child]:text-[28px]/none [&>span:first-child]:text-[#CEA44D] max-[701px]:gap-[15px]">
           <span>{number}</span>
-          <span className="block font-mono-brand text-xl font-bold tracking-[.14em] uppercase text-[#CEA44D]">
+          <span className="block text-xl md:text-2xl font-bold tracking-[.14em] uppercase text-[#CEA44D]">
             {category}
           </span>
         </div>
-        <h3>{title}</h3>
-        <AboutParagraph>{children}</AboutParagraph>
+        <h3 className="md:!text-xl">{title}</h3>
+        <AboutParagraph className="text-md">{children}</AboutParagraph>
       </Reveal>
     </article>
   );

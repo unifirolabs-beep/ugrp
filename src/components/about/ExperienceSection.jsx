@@ -26,7 +26,7 @@ export default function ExperienceSection() {
                 <br />
                 experience.
               </h2>
-              <AboutParagraph>
+              <AboutParagraph className="text-lg md:text-2xl leading-[28px] text-[#16181A]">
                 That belief got tested early, and often. From turning RSVI from bankruptcy to bankable to helping carry a{" "}
                 <strong>$100M+</strong> semiconductor division into a Golden Gate Capital transaction, every challenge reinforced what we believe about entrepreneurship.
               </AboutParagraph>

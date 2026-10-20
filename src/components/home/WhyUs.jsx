@@ -1,33 +1,33 @@
 export default function WhyUs() {
   const cards = [
     {
-      title: "20+ Years of\nExperience",
+      title: "20+ Years of Experience",
       description:
         "Two decades of building, advising, investing, and creating value across industries.",
       featured: true,
     },
     {
-      title: "Entrepreneurial\nThinking",
+      title: "Entrepreneurial Thinking",
       description:
         "We challenge conventional thinking and look for opportunities others may overlook.",
     },
     {
-      title: "We Stay in the\nRoom",
+      title: "We Stay in the Room",
       description:
         "We don't simply invest and step away. We work alongside founders and leadership teams through execution and growth.",
     },
     {
-      title: "Capital +\nStrategy",
+      title: "Capital + Strategy",
       description:
         "We connect capital with business infrastructure, strategic planning, and growth opportunities.",
     },
     {
-      title: "Proven Track\nRecord",
+      title: "Proven Track Record",
       description:
         "From turnarounds to acquisitions and strategic transactions, our experience is built through real execution.",
     },
     {
-      title: "Built for Long-Term\nValue",
+      title: "Built for Long-Term Value",
       description:
         "Our goal isn't just the next milestone. We build ventures designed for sustainable growth and lasting value.",
     },
@@ -38,13 +38,12 @@ export default function WhyUs() {
       <div className="mx-auto max-w-[1400px]">
         {/* Heading */}
         <div className="mb-10 text-center md:mb-[3vw]">
-          <h2 className="font-liberation text-4xl font-bold leading-[40px] text-[#17191d]">
+          <h2 className="font-liberation text-4xl md:text-5xl font-bold leading-[40px] text-[#17191d]">
             Why The U Group
           </h2>
 
-          <p className="font-liberation mx-auto mt-3 max-w-[500px] text-lg font-normal leading-[21px] text-[#25272a]">
+          <p className="font-liberation mx-auto mt-3 max-w-[500px] text-lg md:text-xl font-normal leading-[21px] text-[#25272a]">
             Two Decades of Experience. One Commitment
-            <br />
             to Execution.
           </p>
         </div>
@@ -54,14 +53,14 @@ export default function WhyUs() {
           {cards.map((card, index) => (
             <div
               key={card.title}
-              className={`flex min-h-[145px] flex-col md:col-span-2 bg-[#CEA44D] text-white justify-between rounded-[8px] px-5 py-5 md:min-h-[9.8vw] md:px-[1.1vw] md:py-[1.15vw]`}
+              className={`flex min-h-[145px] flex-col md:col-span-2 bg-[#CEA44D] text-white justify-center items-center rounded-[8px] px-5 py-5 md:min-h-[9.8vw] md:px-[1.1vw] md:py-[1.15vw]`}
             >
               <div>
                 <h3 className="font-liberation whitespace-pre-line text-lg text-white font-bold leading-[22px]">
                   {card.title}
                 </h3>
 
-                <p className="font-liberation mt-4 text-md text-white font-normal leading-[15px]">
+                <p className="font-liberation mt-4 text-md text-white font-normal leading-[20px]">
                   {card.description}
                 </p>
               </div>

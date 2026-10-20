@@ -41,7 +41,7 @@ export default function Ventures() {
         </div>
 
         {/* Avatars + Statement */}
-        <div className="mx-auto mt-12 max-w-[1100px] grid grid-cols-2 items-start md:mt-[4vw] md:gap-[5vw]">
+        <div className="mx-auto mt-12 max-w-[1100px] grid grid-cols-1 md:grid-cols-2 items-center md:items-start">
           {/* Avatars */}
           <div className="flex justify-center items-center">
             {AVATARS.map((avatar, index) => (
@@ -63,7 +63,7 @@ export default function Ventures() {
           </div>
 
           {/* Statement */}
-          <p className="font-liberation max-w-[650px] text-lg leading-[30px] text-[#17191d]">
+          <p className="font-liberation max-w-[650px] text-lg md:text-xl leading-[30px] text-[#17191d] pt-2 md:text-left text-center">
             The U Group&apos;s ventures span multiple industries, united by
             one principle:
             <br />
@@ -83,7 +83,7 @@ export default function Ventures() {
             >
               <div className="flex h-full w-full flex-col items-center justify-center px-[12%] text-center">
                 {/* Logo */}
-                <div className="relative flex h-[38%] w-[72%] items-center justify-center">
+                <div className="relative flex h-[40%] md:h-[45%] w-[60%] md:w-[87%] items-center justify-center">
                   {venture.image ? (
                     <Image
                       src={venture.image}
@@ -93,14 +93,14 @@ export default function Ventures() {
                       className="object-contain"
                     />
                   ) : (
-                    <span className="font-liberation text-[28px] font-normal tracking-[0.16em] text-[#17191d] md:text-[2.15vw]">
+                    <span className="font-liberation text-[40px] md:text-[52px] font-normal tracking-[0.16em] text-[#17191d]">
                       VenIQ
                     </span>
                   )}
                 </div>
 
                 {/* Description */}
-                <p className="font-liberation mt-3 max-w-[190px] text-[13px] font-normal leading-[21px] text-[#25272a]">
+                <p className="font-liberation mt-3 max-w-[190px] text-[17px] font-normal leading-[21px] text-[#25272a]">
                   {venture.description.includes(" / ") ? (
                     <>
                       {venture.description.split(" / ")[0]}
