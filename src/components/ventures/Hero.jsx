@@ -44,12 +44,12 @@ export default function Hero() {
   return (
     <div className="w-full bg-[#f6f4f0] text-[#111315] font-sans overflow-x-hidden">
       {/* ========================================================= */}
-      {/* 1. HERO SECTION                                           */}
+      {/* 1. HERO SECTION                                          */}
       {/* Contains floating arch of 9 cards and headline callout    */}
       {/* ========================================================= */}
       <section className="relative w-full flex flex-col items-center justify-start pt-6 sm:pt-10 pb-12 overflow-hidden">
         {/* INFINITE HORIZONTAL SCROLLING ARCH (Unified for mobile & desktop) */}
-        <div className="w-full overflow-hidden relative">
+        <div className="w-full overflow-hidden relative pointer-events-none">
           <div className="flex animate-infinite-marquee">
             {/* First Set of 9-Card Arch */}
             <div className="relative w-[1440px] min-w-[1440px] h-[480px] shrink-0">
@@ -62,14 +62,14 @@ export default function Hero() {
                   <div
                     key={`set1-${card.id}-${index}`}
                     style={pos}
-                    className={`absolute w-[182px] h-[206px] rounded-[14px] border-[2.5px] border-[#CEA44D] ${bgColor} overflow-hidden shadow-sm flex items-end justify-center transition-transform duration-300 hover:scale-105 pointer-events-auto`}
+                    className={`absolute w-[182px] h-[206px] rounded-[14px] border-[2.5px] border-[#CEA44D] ${bgColor} overflow-hidden shadow-sm flex items-end justify-center`}
                   >
                     <div className="relative w-full h-full">
                       <Image
                         src={card.img}
                         alt="Venture Leader"
                         fill
-                        className="object-contain object-bottom"
+                        className="object-contain object-bottom select-none"
                         sizes="182px"
                       />
                     </div>
@@ -89,14 +89,14 @@ export default function Hero() {
                   <div
                     key={`set2-${card.id}-${index}`}
                     style={pos}
-                    className={`absolute w-[182px] h-[206px] rounded-[14px] border-[2.5px] border-[#CEA44D] ${bgColor} overflow-hidden shadow-sm flex items-end justify-center transition-transform duration-300 hover:scale-105 pointer-events-auto`}
+                    className={`absolute w-[182px] h-[206px] rounded-[14px] border-[2.5px] border-[#CEA44D] ${bgColor} overflow-hidden shadow-sm flex items-end justify-center`}
                   >
                     <div className="relative w-full h-full">
                       <Image
                         src={card.img}
                         alt="Venture Leader"
                         fill
-                        className="object-contain object-bottom"
+                        className="object-contain object-bottom select-none"
                         sizes="182px"
                       />
                     </div>
@@ -110,7 +110,7 @@ export default function Hero() {
         {/* HERO CORE TEXT & CTA */}
         <div className="relative z-10 max-w-[680px] mx-auto text-center flex flex-col items-center mt-3 sm:mt-6 px-4 pt-4">
           <h1 className="font-bold not-italic text-4xl md:text-5xl leading-[100%] tracking-[0%] text-center text-neutral-900">
-            We Don&apos;t Just Invest in Ideas.
+            We Don&apos;t Just Invest in Ideas.{" "}
             <span className="font-bold not-italic text-4xl md:text-5xl leading-[100%] tracking-[0%] text-center text-[#CEA44D]">
               We Build Them.
             </span>
@@ -129,7 +129,7 @@ export default function Hero() {
           <button
             type="button"
             onClick={handleScrollToVentures}
-            className="mt-6 w-[207px] h-[32px] inline-flex items-center justify-center gap-1 rounded-[3px] bg-[#CEA44D] hover:bg-[#b3882e] text-white text-[12px] font-bold tracking-wider uppercase transition-all shadow-sm active:scale-95 cursor-pointer font-sans"
+            className="mt-6 w-[207px] h-[32px] inline-flex items-center justify-center gap-1 rounded-[3px] bg-[#CEA44D] hover:bg-[#b3882e] text-white text-[12px] font-bold tracking-wider uppercase transition-colors shadow-sm cursor-pointer font-sans"
           >
             Explore Our Ventures →
           </button>
