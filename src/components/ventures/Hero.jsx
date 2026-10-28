@@ -15,8 +15,8 @@ const EXACT_9_CARDS = [
   { id: 5, img: "/images/ventures/person5.png" },
   { id: 6, img: "/images/ventures/person6.png" },
   { id: 7, img: "/images/ventures/person7.png" },
-  { id: 8, img: "/images/ventures/person1.png" },
-  { id: 9, img: "/images/ventures/person2.png" },
+  { id: 8, img: "/images/ventures/person8.png" },
+  { id: 9, img: "/images/ventures/person10.png" },
 ];
 
 // Staggered arch coordinates for the 9 floating cards

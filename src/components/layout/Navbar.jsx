@@ -101,12 +101,12 @@ export default function Navbar() {
             Ventures
           </Link>
 
-          <a
-            href="#"
+          <Link
+            href="/contact"
             className="flex h-[29px] w-[80px] items-center justify-center bg-[#CEA44D] px-[14px] font-liberation text-[14px] font-normal text-white transition-colors duration-200 hover:bg-[#ad7f20]"
           >
             Contact
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Hamburger Button (Right aligned) */}
@@ -141,13 +141,13 @@ export default function Navbar() {
           </div>
 
           <div className="pt-6">
-            <a
-              href="#"
+            <Link
+              href="/contact"
               onClick={() => setOpen(false)}
               className="flex h-[44px] w-full items-center justify-center bg-[#CEA44D] font-liberation text-[15px] font-normal text-white transition-colors duration-200 hover:bg-[#ad7f20]"
             >
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       )}

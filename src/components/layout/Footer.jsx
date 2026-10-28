@@ -61,6 +61,13 @@ export default function Footer() {
                             >
                                 Ventures
                             </Link>
+
+                            <Link
+                                href="/contact"
+                                className="font-liberation text-[13px] text-[#d7d7d7] transition-opacity hover:opacity-65"
+                            >
+                                Contact
+                            </Link>
                         </div>
                     </div>
 
@@ -79,14 +86,16 @@ export default function Footer() {
                             </Link>
 
                             <Link
-                                href="#"
+                                href="https://www.jujuwinelab.com/"
+                                target="_blank"
                                 className="font-liberation text-[13px] text-[#d7d7d7] transition-opacity hover:opacity-65"
                             >
                                 JuJu Labs
                             </Link>
 
                             <Link
-                                href="#"
+                                href="http://bioved.com"
+                                target="_blank"
                                 className="font-liberation text-[13px] text-[#d7d7d7] transition-opacity hover:opacity-65"
                             >
                                 Bioved

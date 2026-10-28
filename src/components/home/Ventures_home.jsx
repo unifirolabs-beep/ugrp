@@ -1,19 +1,23 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const VENTURES = [
   {
     name: "Juju",
     image: "/images/ventures/juju.png",
     description: "Consumer Science / Beverage Innovation",
+    href: "https://www.jujuwinelab.com/",
   },
   {
     name: "Bioved",
-    image: "/images/ventures/bioved.png",
+    image: "/images/home/bioved.png",
     description: "Integrative Pharmaceuticals / Drug Discovery",
+    href: "https://bioved.com/",
   },
   {
     name: "VenIQ",
     description: "AI Venture Intelligence",
+    href: "/",
   },
 ];
 
@@ -76,8 +80,11 @@ export default function Ventures() {
 
         {/* Venture circles */}
         <div className="mx-auto mt-14 grid max-w-[1200px] grid-cols-1 gap-8 sm:grid-cols-3 md:mt-[5vw] md:gap-[2vw]">
-          {VENTURES.map((venture) => (
-            <div
+          {VENTURES.map((venture) => (  
+            <Link
+              href={venture.href}
+              target="_blank"
+              rel="noopener noreferrer"
               key={venture.name}
               className="flex aspect-square w-full items-center justify-center rounded-full border-[2px] border-[#c49227] bg-[#f6f4f0]"
             >
@@ -93,8 +100,8 @@ export default function Ventures() {
                       className="object-contain"
                     />
                   ) : (
-                    <span className="font-liberation text-[40px] md:text-[52px] font-normal tracking-[0.16em] text-[#17191d]">
-                      VenIQ
+                    <span className="font-liberation text-[40px] md:text-[52px] font-normal text-[#17191d]">
+                      Ven<span className="text-[#759801]">IQ</span>
                     </span>
                   )}
                 </div>
@@ -112,7 +119,7 @@ export default function Ventures() {
                   )}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

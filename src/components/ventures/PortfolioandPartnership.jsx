@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 // ==========================================
 // ASSET PATH CONSTANTS
@@ -37,6 +38,7 @@ const VENTURES_DATA = [
     image: GREEN_FOUNDER,
     founderName: "Founder Name",
     founderRole: "co-founder",
+    href:"https://www.jujuwinelab.com/"
   },
   {
     id: "bioved",
@@ -49,9 +51,10 @@ const VENTURES_DATA = [
     highlightBox:
       "Bioved is also the scientific foundation of The U Group's Next World Medicine initiative.",
     buttonText: "EXPLORE BIOVED →",
-    image: ORANGE_FOUNDER,
+    image: "/images/ventures/bioved.png",
     founderName: "Founder Name",
     founderRole: "co-founder",
+    href:"https://bioved.com/"
   },
   {
     id: "veniq",
@@ -63,9 +66,10 @@ const VENTURES_DATA = [
     focusAreas: ["Artificial Intelligence", "Venture Intelligence", "Entrepreneurship"],
     highlightBox: "Passion starts ventures. Intelligence sustains them.",
     buttonText: "EXPLORE VenIQ →",
-    image: GREEN_FOUNDER,
+    image: "/images/ventures/veniq.jpg",
     founderName: "Founder Name",
     founderRole: "co-founder",
+    href:"#"
   },
 ];
 
@@ -220,9 +224,11 @@ export default function PortfolioAndPartnership() {
 
                   {/* Primary Exploration Action Button */}
                   <div className="mt-10 pt-2">
+                    <Link href={venture.href} target="_blank" rel="noopener noreferrer">
                     <button className="inline-flex items-center gap-2 px-6 py-2.5 rounded-[4px] bg-white hover:bg-neutral-100 text-neutral-950 text-[11px] font-bold tracking-wider uppercase transition cursor-pointer shadow-sm">
                       {venture.buttonText}
                     </button>
+                    </Link>
                   </div>
                 </div>
               </div>
