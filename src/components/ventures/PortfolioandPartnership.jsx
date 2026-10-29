@@ -5,13 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 // ==========================================
-// ASSET PATH CONSTANTS
-// Local image assets matching the Figma export
-// ==========================================
-const GREEN_FOUNDER = "/images/ventures/Frame56.png";
-const ORANGE_FOUNDER = "/images/ventures/Frame57.png";
-
-// ==========================================
 // VENTURE PORTFOLIO DATA
 // Card content and detailed profile attributes
 // ==========================================
@@ -35,9 +28,7 @@ const VENTURES_DATA = [
       },
     ],
     buttonText: "EXPLORE JUJU LABS →",
-    image: GREEN_FOUNDER,
-    founderName: "Founder Name",
-    founderRole: "co-founder",
+    image: "/images/ventures/jujuwinelabs.jpg",
     href:"https://www.jujuwinelab.com/"
   },
   {
@@ -52,8 +43,6 @@ const VENTURES_DATA = [
       "Bioved is also the scientific foundation of The U Group's Next World Medicine initiative.",
     buttonText: "EXPLORE BIOVED →",
     image: "/images/ventures/bioved.png",
-    founderName: "Founder Name",
-    founderRole: "co-founder",
     href:"https://bioved.com/"
   },
   {
@@ -67,8 +56,6 @@ const VENTURES_DATA = [
     highlightBox: "Passion starts ventures. Intelligence sustains them.",
     buttonText: "EXPLORE VenIQ →",
     image: "/images/ventures/veniq.jpg",
-    founderName: "Founder Name",
-    founderRole: "co-founder",
     href:"#"
   },
 ];
@@ -144,19 +131,6 @@ export default function PortfolioAndPartnership() {
                       unoptimized
                       className="object-cover object-center"
                     />
-
-                    {/* Founder Overlay Details (Bottom Left) */}
-                    <div className="absolute bottom-6 left-6 z-10 text-white">
-                      <p className="text-[22px] font-bold leading-none drop-shadow-sm">
-                        {venture.founderName}
-                      </p>
-                      <p className="text-[14px] text-neutral-200 lowercase mt-1 drop-shadow-sm">
-                        {venture.founderRole}
-                      </p>
-                      <div className="mt-3 w-6 h-6 rounded-[2px] bg-neutral-950/80 flex items-center justify-center text-[11px] font-bold text-neutral-200 border border-white/10 font-sans">
-                        in
-                      </div>
-                    </div>
                   </div>
                 </div>
 
