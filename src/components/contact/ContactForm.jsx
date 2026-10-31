@@ -87,10 +87,10 @@ export default function ContactForm() {
 
             <div className="mt-4 flex items-center gap-2">
               <a
-                href="mailto:contact@ugrp.com"
+                href="mailto:rgauze@theugrp.com"
                 className="text-lg sm:text-xl font-bold text-[#16181a] underline decoration-[#16181a] underline-offset-4 hover:text-[#CEA44D] hover:decoration-[#CEA44D] transition-colors"
               >
-                contact@ugrp.com
+                rgauze@theugrp.com
               </a>
               <button
                 type="button"
