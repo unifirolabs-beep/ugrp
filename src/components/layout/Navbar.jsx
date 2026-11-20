@@ -25,7 +25,7 @@ export default function Navbar() {
     },
     {
       label: "Leadership",
-      href: "/#",
+      href: "/leadership",
     },
     {
       label: "Ventures",
@@ -88,7 +88,7 @@ export default function Navbar() {
         {/* Desktop Right navigation */}
         <div className="hidden min-[901px]:flex items-center gap-[40px]">
           <Link
-            href="#"
+            href="/leadership"
             className="whitespace-nowrap font-liberation text-md font-normal leading-none text-[#202020] transition-opacity duration-200 hover:opacity-65"
           >
             Leadership
@@ -131,9 +131,8 @@ export default function Navbar() {
                 key={item.label}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className={`font-liberation text-[18px] text-[#202020] transition-opacity duration-200 hover:opacity-65 pb-2 ${
-                  pathname === item.href ? "font-bold text-[#CEA44D]" : "font-normal"
-                }`}
+                className={`font-liberation text-[18px] text-[#202020] transition-opacity duration-200 hover:opacity-65 pb-2 ${pathname === item.href ? "font-bold text-[#CEA44D]" : "font-normal"
+                  }`}
               >
                 {item.label}
               </Link>

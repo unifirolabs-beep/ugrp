@@ -49,7 +49,7 @@ export default function Footer() {
                             </Link>
 
                             <Link
-                                href="#"
+                                href="/leadership"
                                 className="font-liberation text-[13px] text-[#d7d7d7] transition-opacity hover:opacity-65"
                             >
                                 Leadership

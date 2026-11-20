@@ -38,7 +38,7 @@ export default function Hero() {
           </p>
 
           {/* Action Buttons */}
-          <div className="flex flex-row items-center justify-start gap-8 my-2">
+          <div className="flex flex-col md:flex-row items-center justify-start gap-8 my-2">
             <Link href="/about">
               <button className="bg-transparent text-[#16181A] font-semibold text-sm md:text-base border-b-2 border-[#CEA44D] pb-1 cursor-pointer hover:opacity-80 transition-opacity">
                 Explore The U Group

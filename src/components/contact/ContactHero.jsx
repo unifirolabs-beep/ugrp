@@ -28,9 +28,6 @@ export default function ContactHero() {
             <h1 className="font-liberation text-3xl font-bold tracking-tight text-[#CEA44D] drop-shadow-md sm:text-4xl md:text-5xl lg:text-[54px] leading-[1.25]">
               Contact Us.             
             </h1>
-            <h4 className="text-lg md:text-2xl mt-4 font-liberation text-[#CEA44D]">
-              Home - Contact Us
-            </h4>
           </motion.div>
         </div>
       </div>
